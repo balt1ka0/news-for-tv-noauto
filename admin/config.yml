@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: ваш-логин/имя-репозитория
+  branch: main
+  base_url: https://ваш-воркер.workers.dev  # ← Сюда вставим URL из шага 3
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "news"
+    label: "Новости"
+    label_singular: "Новость"
+    folder: "content"  # Папка для хранения файлов новостей
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Ссылка", name: "link", widget: "string", required: false }
+      - { label: "Краткое описание", name: "summary", widget: "text" }
+      - { label: "Категория", name: "category", widget: "select", options: ["Хайтек", "Наука", "Технологии", "Умное садоводство"] }
+      - { label: "Дата публикации", name: "pub_date", widget: "datetime" }
