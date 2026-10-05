@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ваш-логин/имя-репозитория
+  repo: balt1ka0/news-for-tv-noauto
   branch: main
   base_url: https://news-for-tv-noauto.kkkkk-kee-49f.workers.dev  # ← Сюда вставим URL из шага 3
 
