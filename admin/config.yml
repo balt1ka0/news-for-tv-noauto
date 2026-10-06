@@ -2,7 +2,7 @@ backend:
   name: github
   repo: balt1ka0/news-for-tv-noauto
   branch: main
-  base_url: https://sveltia-cms-auth.kkkkk-kee-49f.workers.dev  # ← Сюда вставим URL из шага 3
+  # base_url: https://sveltia-cms-auth.kkkkk-kee-49f.workers.dev  # ← Сюда вставим URL из шага 3
 
 media_folder: "uploads"
 public_folder: "/uploads"
