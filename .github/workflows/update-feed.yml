@@ -3,9 +3,11 @@ name: Rebuild RSS feed
 on:
   push:
     paths:
-      - 'content/**'          # ← ДОБАВИТЬ ЭТУ СТРОКУ
-      - 'manual_news.json'
+      - 'content/**'
       - 'feed_generator.py'
+      - 'manual_news.json'
+  schedule:
+    - cron: '*/30 * * * *'    # каждые 30 минут
   workflow_dispatch:
 
 permissions:
