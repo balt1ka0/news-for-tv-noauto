@@ -3,9 +3,10 @@ name: Rebuild RSS feed
 on:
   push:
     paths:
-      - 'manual_news.json'    # запуск при изменении JSON
+      - 'content/**'          # ← ДОБАВИТЬ ЭТУ СТРОКУ
+      - 'manual_news.json'
       - 'feed_generator.py'
-  workflow_dispatch:          # и вручную по кнопке
+  workflow_dispatch:
 
 permissions:
   contents: write
