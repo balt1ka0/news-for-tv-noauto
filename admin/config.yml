@@ -1,38 +1,22 @@
-name: Rebuild RSS feed
+backend:
+  name: github
+  repo: balt1ka0/news-for-tv-noauto
+  branch: main
+  # base_url: https://news-for-tv-noauto.kkkkk-kee-49f.workers.dev
 
-on:
-  push:
-    paths:
-      - 'content/**'          # ← новое: срабатывает на новые/изменённые новости
-      - 'feed_generator.py'
-      - 'manual_news.json'
-  workflow_dispatch:
+media_folder: "uploads"
+public_folder: "/uploads"
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Generate RSS feed
-        run: python feed_generator.py
-
-      - name: Commit and push news.xml
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add news.xml
-          git diff --quiet && git diff --staged --quiet || git commit -m "Rebuild RSS feed [skip ci]"
-          git push
+collections:
+  - name: "news"
+    label: "Новости"
+    label_singular: "Новость"
+    folder: "content"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Ссылка", name: "link", widget: "string", required: false }
+      - { label: "Краткое описание", name: "summary", widget: "text" }
+      - { label: "Категория", name: "category", widget: "select", options: ["Хайтек", "Наука", "Технологии", "Умное садоводство"] }
+      - { label: "Дата публикации", name: "pub_date", widget: "datetime" }
