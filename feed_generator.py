@@ -18,9 +18,12 @@ CONTENT_DIR = Path("content")
 OUTPUT_FILE = "news.xml"
 
 CHANNEL_TITLE = "Корпоративное ТВ — Новости"
-CHANNEL_LINK = "https://tv.example.com"
+CHANNEL_LINK = "https://balt1ka0.github.io/news-for-tv-noauto/"
 CHANNEL_DESCRIPTION = "Новости науки, технологий, хайтека и умного садоводства"
 CHANNEL_LANGUAGE = "ru-ru"
+
+# Добавьте эту строку — реальный адрес самой ленты
+FEED_URL = "https://balt1ka0.github.io/news-for-tv-noauto/news.xml"
 
 DEFAULT_CATEGORY = "Новости"
 
