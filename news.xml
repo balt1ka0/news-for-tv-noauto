@@ -5,24 +5,15 @@
     <link>https://tv.example.com</link>
     <description>Новости науки, технологий, хайтека и умного садоводства</description>
     <language>ru-ru</language>
-    <lastBuildDate>Tue, 06 Oct 2026 09:37:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 09:45:44 +0000</lastBuildDate>
     <generator>corp-tv-manual-feed</generator>
     <atom:link href="https://tv.example.com/news.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Открытие нового корпоративного технопарка</title>
-      <link>https://tv.example.com/news/technopark</link>
-      <description>В кампусе открылся технопарк с лабораториями робототехники и агротеха. Доступ для сотрудников — по пропуску.</description>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 +0300</pubDate>
-      <guid>https://tv.example.com/news/technopark</guid>
-      <category>Хайтек</category>
-    </item>
-    <item>
-      <title>Итоги выставки умного садоводства</title>
-      <link>https://tv.example.com/news/garden-expo</link>
-      <description>На выставке представили дроны для опыления, автономные теплицы и датчики влажности нового поколения.</description>
-      <pubDate>Wed, 30 Sep 2026 15:30:00 +0300</pubDate>
-      <guid>https://tv.example.com/news/garden-expo</guid>
-      <category>Умное садоводство</category>
+      <title>Тест</title>
+      <description>Тест админки кмс</description>
+      <pubDate>Tue, 06 Oct 2026 09:45:44 +0000</pubDate>
+      <guid>Тест</guid>
+      <category>Технологии</category>
     </item>
   </channel>
 </rss>
