@@ -133,7 +133,7 @@ def build_rss(items: list[dict]) -> Element:
     SubElement(channel, "generator").text = "corp-tv-manual-feed"
 
     atom_link = SubElement(channel, "atom:link")
-    atom_link.set("href", f"{CHANNEL_LINK}/news.xml")
+    atom_link.set("href", FEED_URL)
     atom_link.set("rel", "self")
     atom_link.set("type", "application/rss+xml")
 
@@ -158,7 +158,10 @@ def build_rss(items: list[dict]) -> Element:
         SubElement(node, "pubDate").text = format_datetime(
             parse_date(entry.get("pub_date", ""))
         )
-        SubElement(node, "guid").text = link or title
+        guid = SubElement(node, "guid")
+        guid.text = link or title
+        if not link:
+            guid.set("isPermaLink", "false")
         SubElement(node, "category").text = clean_text(
             entry.get("category", DEFAULT_CATEGORY)
         )
