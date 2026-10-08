@@ -5,41 +5,41 @@
     <link>https://balt1ka0.github.io/news-for-tv-noauto/</link>
     <description>Новости науки, технологий, хайтека и умного садоводства</description>
     <language>ru-ru</language>
-    <lastBuildDate>Thu, 08 Oct 2026 07:56:15 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 15:30:41 +0000</lastBuildDate>
     <generator>corp-tv-manual-feed</generator>
     <atom:link href="https://balt1ka0.github.io/news-for-tv-noauto/news.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Новость от Олега №1</title>
       <description>Сегодня Олегу не дали запеканку в столовой</description>
-      <pubDate>Thu, 08 Oct 2026 07:56:15 +0000</pubDate>
+      <pubDate>Thu, 08 Oct 2026 15:30:41 +0000</pubDate>
       <guid isPermaLink="false">Новость от Олега №1</guid>
       <category>Технологии</category>
     </item>
     <item>
       <title>Я снова проверяю пополнение источника</title>
       <description>Сейчас буду проверять автоматическую загрузку отправленных новостей. Они имеют айминг 15 минут, поэтому придется подождать</description>
-      <pubDate>Thu, 08 Oct 2026 07:56:15 +0000</pubDate>
+      <pubDate>Thu, 08 Oct 2026 15:30:41 +0000</pubDate>
       <guid isPermaLink="false">Я снова проверяю пополнение источника</guid>
       <category>Технологии</category>
     </item>
     <item>
       <title>Тестовый тест</title>
       <description>Прием. Раз, раз, раз. Как слышно?</description>
-      <pubDate>Thu, 08 Oct 2026 07:56:15 +0000</pubDate>
+      <pubDate>Thu, 08 Oct 2026 15:30:41 +0000</pubDate>
       <guid isPermaLink="false">Тестовый тест</guid>
       <category>Технологии</category>
     </item>
     <item>
       <title>Тест</title>
       <description>Тест админки кмс</description>
-      <pubDate>Thu, 08 Oct 2026 07:56:15 +0000</pubDate>
+      <pubDate>Thu, 08 Oct 2026 15:30:41 +0000</pubDate>
       <guid isPermaLink="false">Тест</guid>
       <category>Технологии</category>
     </item>
     <item>
       <title>Проверяю новости после редакции</title>
       <description>Я наконец-то пофиксила валидацию этого кода и структуру</description>
-      <pubDate>Thu, 08 Oct 2026 07:56:15 +0000</pubDate>
+      <pubDate>Thu, 08 Oct 2026 15:30:41 +0000</pubDate>
       <guid isPermaLink="false">Проверяю новости после редакции</guid>
       <category>Наука</category>
     </item>
